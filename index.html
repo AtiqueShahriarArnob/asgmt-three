@@ -21,14 +21,9 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
-
-
                     },
                     fontFamily: {
                         Manrope: 'Manrope',
-                    },
-                    backGroundImage: {
-                        page: "url('images/banner.png')",
                     },
                 }
             }
@@ -37,27 +32,31 @@
 </head>
 
 <body class="font-Manrope">
-    <header class="bg-gradient-to-b from-gray-100  mb-16">
-        <navbar class="w-10/12 mx-auto flex pt-6 justify-between items-center ">
+    <header class="bg-gradient-to-b from-gray-100 px-3 mb-16">
+        <navbar class="lg:w-10/12 mx-auto flex pt-6 justify-between items-center ">
             <div class="flex gap-2 items-center">
                 <i
                     class="-rotate-45 bg-[#ABEF5F] text-black  h-8 w-8 p-2 rounded-full items-center fa-solid fa-arrow-right"></i>
                 <h2 class="font-bold text-3xl text-[#212121]">Rinterio</h2>
 
             </div>
-            <diV class="flex gap-7">
+            <diV class="hidden lg:flex gap-7 ">
                 <P class="text-[#494949] font-extrabold">Home</P>
                 <P class="text-[#737373]">Services</P>
                 <P class="text-[#737373]">Portfolio</P>
                 <P class="text-[#737373]">Blogs</P>
                 <P class="text-[#737373]">Contact Us</P>
             </diV>
-            <div class="gap-5">
-                <i class="bg-white w-9 h-9 p-2 rounded-full fa-solid fa-cart-shopping"></i>
-                <i class="bg-white w-9 h-9 p-2 rounded-full  ml-8 fa-solid fa-magnifying-glass"></i>
-                <button class="ml-6 rounded-full bg-[#ABEF5F] px-3 py-2 text-[#1C1C1C] font-bold text-lg">Book Consult
+            <div class="hidden sm:block gap-5">
+                <i class=" bg-white w-9 h-9 p-2 rounded-full fa-solid fa-cart-shopping"></i>
+                <i class=" lg:bg-white lg:w-9 lg:h-9 p-2 rounded-full  lg:ml-8 fa-solid fa-magnifying-glass"></i>
+                <button class=" ml-6 rounded-full bg-[#ABEF5F] px-3 py-2 text-[#1C1C1C] font-bold text-lg">Book Consult
                     <i class="-rotate-45 bg-[#1C1C1C] text-white h-7 w-7 p-1 rounded-full  fa-solid fa-arrow-right"></i>
                 </button>
+                
+            </div>
+            <div class="lg:hidden">
+                <i class="rounded-full bg-white h-9 w-9 p-2 fa-solid fa-bars"></i> 
             </div>
         </navbar>
         <section>
@@ -66,29 +65,26 @@
                 A barn house of this design has a<br> striking appearance
             </h1>
             <h4 class="text-[#494949] font-medium text-base text-center mt-11">
-                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
-                wood, sleek metal<br> accents, and large windows that flood the space with natural light.
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br> accents, and large windows that flood the space with natural light.
             </h4>
-            <div class="text-center pb-12">
+            <div class=" text-center pb-12">
                 <button
-                    class="mt-10 text rounded-full bg-[#ABEF5F] bg-opacity-50 px-3 py-2 text-[#1C1C1C] font-bold text-lg ">View
-                    Details
+                    class=" mt-10 text rounded-full bg-[#ABEF5F] bg-opacity-50 px-3 py-2 text-[#1C1C1C] font-bold text-lg ">View Details
                     <i class="-rotate-45 bg-[#ABEF5F] text-black h-7 w-7 p-1 rounded-full  fa-solid fa-arrow-right"></i>
                 </button>
             </div>
         </section>
     </header>
     <main>
-        <section class="bg-gray-100 h-[1260px] ">
-            <div class="w-10/12 mx-auto flex justify-around gap-12 items-center pt-24 relative ">
+        <section class="bg-gray-100 h-full">
+            <div class="w-10/12 mx-auto lg:flex justify-around gap-12 items-center pt-24 relative ">
                 <div>
-                    <div>
-                        <button class=" text rounded-full bg-white  px-3 py-2 text-[#1C1C1C] font-bold text-base"><i
+                    <div class="text-center lg:text-start">
+                        <button class="  rounded-full bg-white  px-3 py-2 text-[#1C1C1C] font-bold text-base"><i
                                 class=" text-black  fa-solid fa-arrow-right"></i> About Us
                     </div>
-                    <h1 class="mt-10 text-4xl font-bold text-[#212121]">We design thoughtful,<br> liveable spaces</h1>
-                    <p class="mt-10 font-medium text-[#494949] text-base">The barn house captivates with its blend of
-                        rustic charm and<br> modern sophistication,featuring weathered wood, sleek metal accents.</p>
+                    <h1 class="text-center lg:text-start mt-10 text-4xl font-bold text-[#212121]">We design thoughtful,<br> liveable spaces</h1>
+                    <p class="text-center lg:text-start mt-10 font-medium text-[#494949] text-base">The barn house captivates with its blend of rustic charm and<br> modern sophistication,featuring weathered wood, sleek metal accents.</p>
                     <div class="flex bg-[#FFFFFF] mt-9 p-5 gap-4 rounded-2xl items-center">
                         <div>
                             <img src="images/commercial.png" alt="" srcset="">
@@ -112,13 +108,13 @@
                         </div>
 
                     </div>
-                    <div class="absolute -mt-[615px] -ml-16">
+                    <div class="hidden sm:block lg:absolute  lg:-mt-[615px] -ml-16">
                         <img src="images/Vector.png" alt="" srcset="">
                     </div>
                 </div>
 
                 <div>
-                    <img src="images/Rectangle.png" alt="" srcset="">
+                    <img class="mt-5" src="images/Rectangle.png" alt="" srcset="">
                 </div>
             </div>
             <div class="text-center">
@@ -128,7 +124,7 @@
             <h1 class="text-4xl font-extrabold text-[#212121] text-center mt-4">Our Works Process</h1>
             <p class="font-medium text-base mt-6 text-center">The barn house captivates with its blend of rustic charm
                 and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
-            <section class="flex items-center justify-around mt-4 w-10/12 mx-auto">
+            <section class="lg:flex  items-center justify-around mt-4 lg:w-10/12 pl-16 mx-auto pb-24">
                 <div class=" mt-8 ">
                     <div class="bg-[#E7C1D3] p-6 w-64 rounded-2xl">
                         <img src="images/concept.png" alt="" srcset="">
@@ -194,6 +190,7 @@
                 </div>
                 <div class="border-2 border-[#E9E9E9] rounded-2xl p-9">
                     <img src="images/img2.png" alt="" srcset="">
+                    
                 </div>
             </div>
             <!-- grid-row-2 -->
@@ -225,118 +222,108 @@
                 </div>
             </div>
         </section>
-        <h1 class="text-4xl font-extrabold text-[#212121] text-center mt-4 pt-14 ">Our Customer <span
+        <div class="mt-64 lg:mt-0">
+            <h1 class="text-4xl font-extrabold text-[#212121] text-center mt-4 pt-14 ">Our Customer <span
                 class="text-[#494949]">Review</span></h1>
         <p class="font-medium text-base mt-6 text-center mb-20">"Hear what our satisfied clients have to say about their
             experience with Rinterio.<br> Their feedback speaks to the quality, creativity, and dedication we bring to
             every project."</p>
+        </div>
         <!--extra part -->
-        <section class="mx-auto w-full h-[515px] bg-[#E9E9E9]">
-            <div>
-                <div class="carousel ">
-                    <div id="slide1" class="carousel-item relative w-full justify-center items-center">
-                        <div>
-                            <div>
-                                <img class="mx-auto mt-16 h-44 w-48" src="images/customer-1.jpg" alt="" srcset="">
-                            </div>
-                            <div>
-                                <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"The
-                                    experience with Rinterio was fantastic from start to finish. Their design ideas were
-                                    innovative and tailored<br> perfectly to our lifestyle. The entire process was
-                                    smooth, and the final result exceeded our expectations. Highly recommend!"</h3>
-                                <div class="text-center mt-6">
-                                    <i class="text-orange-500 fa-solid fa-star"></i>
-                                    <i class="text-orange-500 fa-solid fa-star"></i>
-                                    <i class="text-orange-500 fa-solid fa-star"></i>
-                                    <i class="text-orange-500 fa-solid fa-star"></i>
-                                    <i class="text-orange-500 fa-solid fa-star-half-stroke"></i>
-                                </div>
-                                <h1 class="text-center pt-8 text-2xl font-extrabold">Mark Davis</h1>
-                            </div>
-                        </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide4" class="btn btn-circle">❮</a>
-                            <a href="#slide2" class="btn btn-circle">❯</a>
-                        </div>
+        <section class="lg:flex justify-around ml-16 lg:ml-0 gap">
+            <div class="mb-16">
+                <div class="card bg-base-100 w-72 shadow-xl h-96">
+                    <figure class="px-6 pt-6">
+                      <img
+                        src="images/customer-1.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Mark Davis</h2>
+                      <p>The
+                        experience with Rinterio was fantastic from start to finish. Their design ideas were innovative. Highly recommend!</p>
+                      <div class="card-actions">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star-half-stroke"></i>
+                      </div>
                     </div>
-                    <div id="slide2" class="carousel-item relative w-full justify-center items-center">
-                        <div>
-                            <div>
-                                <img class="mx-auto mt-16 h-44 w-48" src="images/customer-3.jpg" alt="" srcset="">
-                            </div>
-                            <div>
-                                <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"Rinterio
-                                    transformed my outdated living space into a modern, stylish home that I absolutely
-                                    love! The team was<br> professional, attentive to my needs, and delivered exactly
-                                    what I envisioned. I couldn't be happier with the results!"</h3>
-                            </div>
-                            <div class="text-center mt-6">
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                            </div>
-                            <h1 class="text-center pt-8 text-2xl font-extrabold">Emily Roberts</h1>
-                        </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide1" class="btn btn-circle">❮</a>
-                            <a href="#slide3" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide3" class="carousel-item relative w-full justify-center items-center">
-                        <div>
-                            <div>
-                                <img class="mx-auto mt-16 h-44 w-48" src="images/trainer1.jpg" alt="" srcset="">
-                            </div>
-                            <div>
-                                <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"I am so
-                                    impressed with Rinterio's attention to detail and creativity. They took our ideas
-                                    and enhanced them<br> in ways we never imagined. The end result is a beautifully
-                                    designed home that truly feels like 'us.' Thank you, Rinterio!"</h3>
-                            </div>
-                            <div class="text-center mt-6">
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                            </div>
-                            <h1 class="text-center pt-8 text-2xl font-extrabold">John Mitchell</h1>
-                        </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide2" class="btn btn-circle">❮</a>
-                            <a href="#slide4" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                    <div id="slide4" class="carousel-item relative w-full justify-center items-center">
-                        <div>
-                            <div>
-                                <img class="mx-auto mt-16 h-44 w-52" src="images/pic.jpg" alt="" srcset="">
-                            </div>
-                            <div>
-                                <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"Working with
-                                    Rinterio was a pleasure. Their team is professional, responsive, and truly cares
-                                    about<br> delivering the best results. Our home’s new design is both functional and
-                                    beautiful, and we couldn’t be happier with the outcome."</h3>
-                            </div>
-                            <!-- rating -->
-                            <div class="text-center mt-6">
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                                <i class="text-orange-500 fa-solid fa-star"></i>
-                            </div>
-                            <h1 class="text-center pt-8 text-2xl font-extrabold">Olivia Garcia</h1>
-                        </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                            <a href="#slide3" class="btn btn-circle">❮</a>
-                            <a href="#slide1" class="btn btn-circle">❯</a>
-                        </div>
-                    </div>
-                </div>
+                  </div>
             </div>
+            <div class="mb-16">
+                <div class="card bg-base-100 w-72 shadow-xl h-96">
+                    <figure class="px-6 pt-6">
+                      <img
+                        src="images/customer-3.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Olivia Garcia</h2>
+                      <p>Working with
+                        Rinterio was a pleasure.Our home’s new design is both functional and
+                        beautiful, and we couldn’t be happier with the outcome.<div class="card-actions">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="mb-16">
+                <div class="card bg-base-100 w-72 shadow-xl h-96">
+                    <figure class="px-6 pt-6">
+                      <img
+                        src="images/trainer1.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">John Mitchell</h2>
+                      <p>I am so
+                        impressed with Rinterio's attention to detail and creativity. They took our ideas and enhanced them in ways we never imagined. Thank you, Rinterio!</p>
+                      <div class="card-actions">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="mb-16">
+                <div class="card bg-base-100 w-72 shadow-xl h-96">
+                    <figure class="px-6 pt-6">
+                      <img
+                        src="images/customer-7.jpg"
+                        alt="Shoes"
+                        class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Emily Roberts</h2>
+                      <p>Rinterio
+                        transformed my outdated living space into a modern, stylish home that I absolutely
+                        love! The team was professional.I couldn't be happier with the results!</p>
+                      <div class="card-actions">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star-half-stroke"></i>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            
         </section>
-        <section class="bg-cover bg-center h-screen relative border-8 border-white">
+        <!-- grid-section -->
+
+        <section class="bg-cover bg-center h-[820px] relative border-8 border-white ">
             <img class="h-[810px] w-full opacity-50 absolute" src="images/bg.jpg" alt="" srcset="">
             <div class="absolute w-full text-center space-y-5">
                 <button
@@ -374,29 +361,55 @@
                             class="fa-solid fa-arrow-right p-2 bg-black rounded-full text-white -rotate-45 font-semibold"></i></button>
                 </div>
             </div>
+            <!--mobile responsive -->
+            <div class="lg:hidden absolute w-full mx-auto h-[650px] mb-96">
+        
+                <div class=" mt-[340px] px-6 ">
+                    <input class="w-full h-[40px] rounded-full pl-5" type="text" placeholder="First Name*">
+                </div>
+                <div class=" mt-5 px-6 ">
+                    <input class="w-full h-[40px] rounded-full pl-5" type="text" placeholder="Last Name*">
+                </div>
+                <div class=" mt-5 px-6 ">
+                    <input class="w-full h-[40px] rounded-full pl-5" type="text" placeholder="Phone Number*">
+                </div>
+                <div class=" mt-5 px-6 ">
+                    <input class="w-full h-[40px] rounded-full pl-5" type="text" placeholder="Email Number*">
+                </div>
+                <div class=" mt-5 px-6 ">
+                    <textarea class="w-full h-[150px] p-4 rounded-3xl" name="" id="" placeholder="Write your message here"></textarea>
+        
+                </div>
+                <div class=" mt-3 px-6 ">
+                    <a class="btn rounded-full bg-lime-300 w-full text-black border-none">Send Mail <i
+                        class="fa-solid fa-arrow-right p-2 bg-black rounded-full text-white -rotate-45 font-semibold"></i></a>
+                </div>
+        
+            </div>
+
         </section>
     </main>
      <!-- footer part -->
-     <footer class="footer bg-[#1C1C1C] footer-center text-primary-content p-10 mt-24">  
-        <aside>
-          <div class="flex gap-3 items-center">
+     <footer class="footer bg-[#1C1C1C] footer-center text-primary-content p-10 ">  
+        <div>
+          <div class=" flex gap-3 items-center">
             <i class="-rotate-45 bg-[#ABEF5F] text-black  h-8 w-8 p-2 rounded-full items-center fa-solid fa-arrow-right"></i>
             <h2 class="font-bold text-4xl text-[#E9E9E9]">Rinterio</h2>
-    
+
           </div>
           <p class="font-medium text-[#737373]">
             The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.
           </p>
-          <div class="flex gap-24">
-            <P>Home</P>
-            <P>Services</P>
-            <P>Portfolio</P>
-            <P>Blogs</P>
-            <P>Contact Us</P>
+          <div class="lg:flex lg:gap-24 gap-24">
+            <P class="mb-3">Home</P>
+            <P class="mb-3">Services</P>
+            <P class="mb-3">Portfolio</P>
+            <P class="mb-3">Blogs</P>
+            <P class="mb-3">Contact Us</P>
           </div>
-        </aside>
+        </div>
         <div >
-            <button class="rounded-full bg-[#ABEF5F] px-3 py-2 text-[#1C1C1C] font-bold text-lg">Book Consult 
+            <button class="rounded-full bg-[#ABEF5F] px-3 py-2 text-[#1C1C1C] font-bold text-lg ">Book Consult 
                 <i class="-rotate-45 bg-[#1C1C1C] text-white h-7 w-7 p-1 rounded-full  fa-solid fa-arrow-right"></i>  
             </button>
         </div>
@@ -404,3 +417,108 @@
 </body>
 
 </html>
+
+
+
+<!-- <section class="mx-auto w-full lg:h-[515px]  h-[630px] bg-[#E9E9E9]">
+    <div class="w-full">
+        <div class="carousel  ">
+            <div id="slide1" class="carousel-item relative w-10/12 lg:w-full justify-center items-center">
+                <div>
+                    <div>
+                        <img class="mx-auto mt-16 h-44 w-48" src="images/customer-1.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class=" text-center pt-14 italic lg:font-medium lg:text-base text-[#494949]">"The
+                            experience with Rinterio was fantastic from start to finish. Their design ideas were innovative. Highly recommend!"</h3>
+                        <div class="text-center mt-6">
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star"></i>
+                            <i class="text-orange-500 fa-solid fa-star-half-stroke"></i>
+                        </div>
+                        <h1 class="text-center pt-8 text-2xl font-extrabold">Mark Davis</h1>
+                    </div>
+                </div>
+                <div class="absolute left-3 right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-10/12 lg:w-full justify-center items-center">
+                <div>
+                    <div>
+                        <img class="mx-auto mt-16 h-44 w-48" src="images/customer-3.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"Rinterio
+                            transformed my outdated living space into a modern, stylish home that I absolutely
+                            love! The team was<br> professional, attentive to my needs, and delivered exactly
+                            what I envisioned. I couldn't be happier with the results!"</h3>
+                    </div>
+                    <div class="text-center mt-6">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-center pt-8 text-2xl font-extrabold">Emily Roberts</h1>
+                </div>
+                <div class="absolute left-5 right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-10/12 lg:w-full justify-center items-center">
+                <div>
+                    <div>
+                        <img class="mx-auto mt-16 h-44 w-48" src="images/trainer1.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"I am so
+                            impressed with Rinterio's attention to detail and creativity. They took our ideas
+                            and enhanced them<br> in ways we never imagined. The end result is a beautifully
+                            designed home that truly feels like 'us.' Thank you, Rinterio!"</h3>
+                    </div>
+                    <div class="text-center mt-6">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-center pt-8 text-2xl font-extrabold">John Mitchell</h1>
+                </div>
+                <div class="absolute left-5 right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-9/12 lg:w-full justify-center items-center">
+                <div>
+                    <div>
+                        <img class="mx-auto mt-16 h-44 w-52" src="images/pic.jpg" alt="" srcset="">
+                    </div>
+                    <div>
+                        <h3 class="text-center pt-14 italic font-semibold text-lg text-[#494949]">"Working with
+                            Rinterio was a pleasure. Their team is professional, responsive, and truly cares
+                            about<br> delivering the best results. Our home’s new design is both functional and
+                            beautiful, and we couldn’t be happier with the outcome."</h3>
+                    </div>
+                    
+                    <div class="text-center mt-6">
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                        <i class="text-orange-500 fa-solid fa-star"></i>
+                    </div>
+                    <h1 class="text-center pt-8 text-2xl font-extrabold">Olivia Garcia</h1>
+                </div>
+                <div class="absolute left-5 right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
